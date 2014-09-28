@@ -1,0 +1,20 @@
+mongo commands
+
+//Set it for the data folder in the app
+mongod --dbpath c:\node\nodetest1\data
+
+//starts mongo
+mongo
+
+//set the database (the default is test)
+use nodetest1
+
+//add data
+db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdomain.com" })
+
+//list it
+db.usercollection.find().pretty()
+
+//add data
+newstuff = [{ "username" : "testuser2", "email" : "testuser2@testdomain.com" }, { "username" : "testuser3", "email" : "testuser3@testdomain.com" }]
+db.usercollection.insert(newstuff);

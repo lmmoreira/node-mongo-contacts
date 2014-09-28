@@ -1,0 +1,14 @@
+//Install express for scaff
+C:\node>npm install -g express
+
+//Same
+C:\node>npm install -g express-generator
+
+//Scafold an app
+C:\node>express nodetest1
+
+//install the dependencies
+C:\node\nodetest1>npm install
+
+//start server
+C:\node\nodetest1>npm start
